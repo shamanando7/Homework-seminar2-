@@ -10,3 +10,5 @@ Console.WriteLine("Введите трехзначное число");
             break;
     }
 Console.WriteLine();
+
+// exit выход из терминала

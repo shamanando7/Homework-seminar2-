@@ -1,21 +1,6 @@
-﻿Console.WriteLine ("Первое число");
+﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. 
 
-string? NumberString1 = Console.ReadLine ();
-int number1 = int.Parse (NumberString1!);
-
-Console.WriteLine ("Второе число");
-
-string? NumberString2 = Console.ReadLine ();
-int number2 = int.Parse (NumberString2!);
-int x = number2%number1;
-
-if (x==0)
-{
-Console.WriteLine ("Число кратно");
-}
-else
-{
-Console.WriteLine ("Число не кратно, остаток " + x);
-}
-
-(())
+int n = int.Parse(Console.ReadLine());
+int k = (int)Math.Log10(n)-2;
+Console.WriteLine(k < 0 ? "No such digit" : (n % (int)Math.Pow(10, k + 1) / (int)Math.Pow(10, k)).ToString());
+Console.ReadLine();
