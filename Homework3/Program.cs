@@ -1,8 +1,18 @@
 ﻿// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным. 
 
 
-//S1.1. Вывести на экран число  с точностью до сотых.
+Console.WriteLine("введите целое число");
+int number = int.Parse(Console.ReadLine());
 
-double a = 12.352465;
-a = Math.Round(a, 2);
-Console.WriteLine($"число  с точностью до сотых {a}");
+if(number<=5)
+{
+    Console.WriteLine("Нет");
+}
+else if(number <= 7)
+{
+    Console.WriteLine("Да");
+}
+else
+{
+    Console.WriteLine("введите число от 1 до 7");
+}
